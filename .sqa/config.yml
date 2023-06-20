@@ -1,0 +1,66 @@
+config:
+  credentials: []
+  project_repos:
+    github.com/EOSC-synergy/sqaaas-tooling:
+      branch: release/1.7.11
+      repo: https://github.com/EOSC-synergy/sqaaas-tooling
+    github.com/rucio/rucio:
+      branch: master
+      repo: https://github.com/rucio/rucio
+environment:
+  JPL_DOCKERFORCEBUILD: enabled
+  JPL_KEEPGOING: enabled
+sqa_criteria:
+  QC.Acc:
+    repos:
+      github.com/rucio/rucio git:
+        commands:
+        - /usr/bin/env sh .sqa/script.fuzzy-chestnut-hornet.sh
+        container: qc.acc_chewy-magnolia-birman
+  QC.Doc:
+    repos:
+      github.com/rucio/rucio find_doc_files.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.droopy-goldenrod-lemming.sh
+        container: qc.doc_chummy-zucchini-hippopotamus
+      github.com/rucio/rucio git:
+        commands:
+        - /usr/bin/env sh .sqa/script.gimpy-smalt-opossum.sh
+        container: qc.doc_lanky-wisteria-discus
+      github.com/rucio/rucio markdownlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.lousy-yellow-tuatara.sh
+        container: qc.doc_fuzzy-tan-panda
+      github.com/rucio/rucio restructuredtext-lint:
+        commands:
+        - /usr/bin/env sh .sqa/script.lanky-flax-anteater.sh
+        container: qc.doc_flimsy-orchid-cassowary
+  QC.Lic:
+    repos:
+      github.com/rucio/rucio licensee:
+        commands:
+        - /usr/bin/env sh .sqa/script.skimpy-russet-zebra.sh
+        container: qc.lic_randy-pink-newt
+  QC.Sec:
+    repos:
+      github.com/rucio/rucio bandit:
+        commands:
+        - /usr/bin/env sh .sqa/script.shabby-ruby-peccary.sh
+        container: qc.sec_leaky-dandelion-walrus
+  QC.Sty:
+    repos:
+      github.com/rucio/rucio flake8:
+        commands:
+        - /usr/bin/env sh .sqa/script.shaky-rust-seal.sh
+        container: qc.sty_skinny-rose-falcon
+      github.com/rucio/rucio jsonlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.smelly-salmon-echidna.sh
+        container: qc.sty_randy-myrtle-barnacle
+  QC.Ver:
+    repos:
+      github.com/rucio/rucio get_git_tags.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.flaky-pink-penguin.sh
+        container: qc.ver_crappy-lemon-liger
+timeout: 5400
