@@ -15,58 +15,58 @@ sqa_criteria:
     repos:
       github.com/rucio/rucio git:
         commands:
-        - /usr/bin/env sh .sqa/script.stealthy-pear-monster.sh
-        container: qc.acc_squeaky-scarlet-buffalo
+        - /usr/bin/env sh .sqa/script.homey-ruby-javanese.sh
+        container: qc.acc_freaky-myrtle-kudu
   QC.Doc:
     repos:
       github.com/rucio/rucio find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.gummy-amethyst-paradise.sh
-        container: qc.doc_blurry-cerise-zebra
+        - /usr/bin/env sh .sqa/script.trippy-mustard-dollar.sh
+        container: qc.doc_scanty-wheat-newfoundland
       github.com/rucio/rucio git:
         commands:
-        - /usr/bin/env sh .sqa/script.greasy-gold-dane.sh
-        container: qc.doc_fuzzy-amethyst-ferret
+        - /usr/bin/env sh .sqa/script.messy-burgundy-hippopotamus.sh
+        container: qc.doc_flaky-denim-whale
       github.com/rucio/rucio markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.bumpy-firebrick-olm.sh
-        container: qc.doc_sloppy-lavender-hamster
+        - /usr/bin/env sh .sqa/script.squirrely-amethyst-sheepdog.sh
+        container: qc.doc_cozy-blue-wombat
       github.com/rucio/rucio restructuredtext-lint:
         commands:
-        - /usr/bin/env sh .sqa/script.frumpy-heliotrope-walrus.sh
-        container: qc.doc_skinny-lime-earwig
+        - /usr/bin/env sh .sqa/script.greasy-bronze-spoonbill.sh
+        container: qc.doc_jumpy-puce-rattlesnake
   QC.Lic:
     repos:
       github.com/rucio/rucio licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.dorky-wisteria-bat.sh
-        container: qc.lic_homely-lime-barracuda
+        - /usr/bin/env sh .sqa/script.flimsy-burgundy-sparrow.sh
+        container: qc.lic_thirsty-linen-spider
   QC.Sec:
     repos:
       github.com/rucio/rucio bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.pasty-sangria-tetra.sh
-        container: qc.sec_shabby-peach-ragdoll
+        - /usr/bin/env sh .sqa/script.skinny-burgundy-koala.sh
+        container: qc.sec_sleepy-teal-caterpillar
   QC.Sty:
     repos:
       github.com/rucio/rucio flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.pokey-green-hyrax.sh
-        container: qc.sty_smelly-ochre-indri
+        - /usr/bin/env sh .sqa/script.flaky-ivory-dingo.sh
+        container: qc.sty_muggy-black-ragdoll
       github.com/rucio/rucio jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.lovely-eggplant-hedgehog.sh
-        container: qc.sty_slimy-charcoal-barracuda
+        - /usr/bin/env sh .sqa/script.geeky-lilac-dogfish.sh
+        container: qc.sty_cranky-blue-macaque
   QC.Uni:
     repos:
       github.com/rucio/rucio pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.slaphappy-brown-wallaby.sh
-        container: qc.uni_paltry-tangerine-jellyfish
+        - /usr/bin/env sh .sqa/script.snippy-gold-goat.sh
+        container: qc.uni_muggy-viridian-hare
   QC.Ver:
     repos:
       github.com/rucio/rucio get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.lanky-cerulean-bloodhound.sh
-        container: qc.ver_pasty-zucchini-markhor
+        - /usr/bin/env sh .sqa/script.pokey-viridian-goose.sh
+        container: qc.ver_snappy-cardinal-cuttlefish
 timeout: 5400
