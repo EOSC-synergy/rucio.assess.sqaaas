@@ -2,7 +2,7 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: release/1.7.11
+      branch: main
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/rucio/rucio:
       branch: master
@@ -15,52 +15,58 @@ sqa_criteria:
     repos:
       github.com/rucio/rucio git:
         commands:
-        - /usr/bin/env sh .sqa/script.fuzzy-charcoal-kudu.sh
-        container: qc.acc_queasy-rust-moorhen
+        - /usr/bin/env sh .sqa/script.stealthy-pear-monster.sh
+        container: qc.acc_squeaky-scarlet-buffalo
   QC.Doc:
     repos:
       github.com/rucio/rucio find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.ready-mustard-eel.sh
-        container: qc.doc_cheeky-ochre-dormouse
+        - /usr/bin/env sh .sqa/script.gummy-amethyst-paradise.sh
+        container: qc.doc_blurry-cerise-zebra
       github.com/rucio/rucio git:
         commands:
-        - /usr/bin/env sh .sqa/script.pokey-viridian-tamarin.sh
-        container: qc.doc_gloppy-violet-turkey
+        - /usr/bin/env sh .sqa/script.greasy-gold-dane.sh
+        container: qc.doc_fuzzy-amethyst-ferret
       github.com/rucio/rucio markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.flaky-heliotrope-burmese.sh
-        container: qc.doc_trippy-corn-havanese
+        - /usr/bin/env sh .sqa/script.bumpy-firebrick-olm.sh
+        container: qc.doc_sloppy-lavender-hamster
       github.com/rucio/rucio restructuredtext-lint:
         commands:
-        - /usr/bin/env sh .sqa/script.pasty-cinnabar-swan.sh
-        container: qc.doc_stinky-bistre-elephant
+        - /usr/bin/env sh .sqa/script.frumpy-heliotrope-walrus.sh
+        container: qc.doc_skinny-lime-earwig
   QC.Lic:
     repos:
       github.com/rucio/rucio licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.homely-lilac-quetzal.sh
-        container: qc.lic_greasy-lavender-toad
+        - /usr/bin/env sh .sqa/script.dorky-wisteria-bat.sh
+        container: qc.lic_homely-lime-barracuda
   QC.Sec:
     repos:
       github.com/rucio/rucio bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.breezy-smalt-affenpinscher.sh
-        container: qc.sec_randy-myrtle-otter
+        - /usr/bin/env sh .sqa/script.pasty-sangria-tetra.sh
+        container: qc.sec_shabby-peach-ragdoll
   QC.Sty:
     repos:
       github.com/rucio/rucio flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.homely-red-russel.sh
-        container: qc.sty_beady-magnolia-spider
+        - /usr/bin/env sh .sqa/script.pokey-green-hyrax.sh
+        container: qc.sty_smelly-ochre-indri
       github.com/rucio/rucio jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.lanky-cerise-jellyfish.sh
-        container: qc.sty_stuffy-linen-emu
+        - /usr/bin/env sh .sqa/script.lovely-eggplant-hedgehog.sh
+        container: qc.sty_slimy-charcoal-barracuda
+  QC.Uni:
+    repos:
+      github.com/rucio/rucio pytest:
+        commands:
+        - /usr/bin/env sh .sqa/script.slaphappy-brown-wallaby.sh
+        container: qc.uni_paltry-tangerine-jellyfish
   QC.Ver:
     repos:
       github.com/rucio/rucio get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.whiny-myrtle-maltese.sh
-        container: qc.ver_jumpy-amaranth-warthog
+        - /usr/bin/env sh .sqa/script.lanky-cerulean-bloodhound.sh
+        container: qc.ver_pasty-zucchini-markhor
 timeout: 5400
