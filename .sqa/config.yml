@@ -15,58 +15,58 @@ sqa_criteria:
     repos:
       github.com/rucio/rucio git:
         commands:
-        - /usr/bin/env sh .sqa/script.homey-ruby-javanese.sh
-        container: qc.acc_freaky-myrtle-kudu
+        - /usr/bin/env sh .sqa/script.pretty-cardinal-tortoise.sh
+        container: qc.acc_woozy-lilac-cougar
   QC.Doc:
     repos:
       github.com/rucio/rucio find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.trippy-mustard-dollar.sh
-        container: qc.doc_scanty-wheat-newfoundland
+        - /usr/bin/env sh .sqa/script.lanky-charcoal-bullfrog.sh
+        container: qc.doc_shabby-mauve-discus
       github.com/rucio/rucio git:
         commands:
-        - /usr/bin/env sh .sqa/script.messy-burgundy-hippopotamus.sh
-        container: qc.doc_flaky-denim-whale
+        - /usr/bin/env sh .sqa/script.pasty-olivine-squirrel.sh
+        container: qc.doc_clammy-buff-tarsier
       github.com/rucio/rucio markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.squirrely-amethyst-sheepdog.sh
-        container: qc.doc_cozy-blue-wombat
+        - /usr/bin/env sh .sqa/script.cranky-amber-giraffe.sh
+        container: qc.doc_leaky-heliotrope-dhole
       github.com/rucio/rucio restructuredtext-lint:
         commands:
-        - /usr/bin/env sh .sqa/script.greasy-bronze-spoonbill.sh
-        container: qc.doc_jumpy-puce-rattlesnake
+        - /usr/bin/env sh .sqa/script.hilly-tangerine-goat.sh
+        container: qc.doc_nerdy-platinum-chinchilla
   QC.Lic:
     repos:
       github.com/rucio/rucio licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.flimsy-burgundy-sparrow.sh
-        container: qc.lic_thirsty-linen-spider
+        - /usr/bin/env sh .sqa/script.lanky-smalt-stingray.sh
+        container: qc.lic_woozy-champagne-camel
   QC.Sec:
     repos:
       github.com/rucio/rucio bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.skinny-burgundy-koala.sh
-        container: qc.sec_sleepy-teal-caterpillar
+        - /usr/bin/env sh .sqa/script.lousy-bronze-capuchin.sh
+        container: qc.sec_messy-alizarin-gibbon
   QC.Sty:
     repos:
       github.com/rucio/rucio flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.flaky-ivory-dingo.sh
-        container: qc.sty_muggy-black-ragdoll
+        - /usr/bin/env sh .sqa/script.homey-teal-akbash.sh
+        container: qc.sty_wimpy-khaki-emu
       github.com/rucio/rucio jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.geeky-lilac-dogfish.sh
-        container: qc.sty_cranky-blue-macaque
+        - /usr/bin/env sh .sqa/script.nerdy-bistre-ostrich.sh
+        container: qc.sty_sunny-puce-cassowary
   QC.Uni:
     repos:
       github.com/rucio/rucio pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.snippy-gold-goat.sh
-        container: qc.uni_muggy-viridian-hare
+        - /usr/bin/env sh .sqa/script.hasty-gold-bat.sh
+        container: qc.uni_fuzzy-xanthic-uakari
   QC.Ver:
     repos:
       github.com/rucio/rucio get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.pokey-viridian-goose.sh
-        container: qc.ver_snappy-cardinal-cuttlefish
+        - /usr/bin/env sh .sqa/script.whiny-silver-mammoth.sh
+        container: qc.ver_droopy-coral-coyote
 timeout: 5400
